@@ -1,6 +1,6 @@
 {
   "name": "mini-deep-assign",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Like Object.assign(), but recursive",
   "main": "./index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
-      "object,assign,property,properties,deep,recurse,recursive,recursion,recursively"
+    "object,assign,property,properties,deep,recurse,recursive,recursion,recursively"
   ],
   "author": "Alexander <alykoshin@gmail.com>",
   "license": "MIT",
@@ -41,8 +41,7 @@
     "url": "https://github.com/alykoshin/mini-deep-assign/issues"
   },
   "homepage": "https://github.com/alykoshin/mini-deep-assign",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^3.4.1",
     "coveralls": "^2.11.4",
