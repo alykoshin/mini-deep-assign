@@ -7,17 +7,19 @@ var chai = require('chai'),
     expect = chai.expect,
     should = chai.should();
 
+var deepCopy = require('../');
+
 describe('mini-deep-assign', function () {
 
   before('before', function () {
 
   });
 
-  beforeEach('before', function () {
+  beforeEach('beforeEach', function () {
 
   });
 
-  afterEach('after', function () {
+  afterEach('afterEach', function () {
 
   });
 
@@ -25,10 +27,23 @@ describe('mini-deep-assign', function () {
 
   });
 
-  it('should have unit test', function () {
-
-    assert(false, 'Please add unit tests.');
-
+  it('should keep type for top-level properties', function () {
+    var source = {
+      null: null,
+      true: true,
+      false: false,
+      string: 'string',
+      regexp: /.*/,
+      data: new Date(),
+      undefined: undefined, // property with undefined value may be removed by Node
+      emptyObject: {},
+      object: { value: 1 },
+      emptyArray: [],
+      array: [ 1, 2, 3 ],
+    };
+    var target = {};
+    var res = source;
+    expect(deepCopy(target, source)).eql(res);
   });
 
 });
