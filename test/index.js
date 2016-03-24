@@ -30,4 +30,55 @@ describe('mini-deep-assign', function () {
     expect(deepCopy(target, source)).eql(res);
   });
 
+  it('should copy arrays 1', function () {
+    var source = {
+      a: [ 1, 2, 3 ],
+      b: [ [1, 2], 3 ],
+    };
+    var target = {};
+    var res = source;
+    expect(deepCopy(target, source)).eql(res);
+    console.log(source);
+  });
+
+
+  it('should copy arrays 2', function () {
+    var source = {
+      delivery : ['M','W','F']
+    };
+    var target = {};
+    var res = source;
+    expect(deepCopy(target, source)).eql(res);
+    console.log(source);
+  });
+
+
+  it('should copy arrays 3', function () {
+    var source =
+        {
+          '_id' : 3,
+          'type' : 'food',
+          'item' : 'Super Dark Chocolate',
+          'classification' : { 'dept' : 'grocery', 'category' : 'chocolate'},
+          'vendor' : {
+            'primary' : {
+              'name' : 'Marsupial Vending Co',
+              'address' : 'Wallaby Rd',
+              'delivery' : ['M','W','F']
+            },
+            'secondary':{
+              'name' : 'Intl. Chocolatiers',
+              'address' : 'Cocoa Plaza',
+              'delivery' : ['Sa']
+            }
+          }
+        }
+      ;
+    var target = {};
+    var res = source;
+    expect(deepCopy(target, source)).eql(res);
+    console.log(source);
+  });
+
+
 });
