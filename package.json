@@ -1,6 +1,6 @@
 {
   "name": "mini-deep-assign",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Like Object.assign(), but recursive",
   "main": "./index.js",
   "engines": {
