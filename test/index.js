@@ -11,22 +11,6 @@ var deepCopy = require('../');
 
 describe('mini-deep-assign', function () {
 
-  before('before', function () {
-
-  });
-
-  beforeEach('beforeEach', function () {
-
-  });
-
-  afterEach('afterEach', function () {
-
-  });
-
-  after('after', function () {
-
-  });
-
   it('should keep type for top-level properties', function () {
     var source = {
       null: null,
