@@ -38,7 +38,7 @@ describe('mini-deep-assign', function () {
     var target = {};
     var res = source;
     expect(deepCopy(target, source)).eql(res);
-    console.log(source);
+    //console.log(source);
   });
 
 
@@ -49,7 +49,7 @@ describe('mini-deep-assign', function () {
     var target = {};
     var res = source;
     expect(deepCopy(target, source)).eql(res);
-    console.log(source);
+    //console.log(source);
   });
 
 
@@ -77,7 +77,7 @@ describe('mini-deep-assign', function () {
     var target = {};
     var res = source;
     expect(deepCopy(target, source)).eql(res);
-    console.log(source);
+    //console.log(source);
   });
 
 
