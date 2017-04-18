@@ -47,13 +47,13 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.8",
-    "eslint": "^2.4.0",
-    "istanbul": "^0.4.2",
-    "jshint": "^2.9.1",
-    "jsinspect": "^0.8.0",
-    "mocha": "^2.4.5",
-    "mockery": "^1.4.1",
-    "sinon": "^1.17.3"
+    "coveralls": "^2.13.0",
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "jsinspect": "^0.12.4",
+    "mocha": "^3.2.0",
+    "mockery": "^2.0.0",
+    "sinon": "^2.1.0"
   }
 }
